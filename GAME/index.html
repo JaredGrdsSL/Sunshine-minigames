@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNSHINE Minigames</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="games">
+        <div id="intro">
+            <h1>WELCOME TO THE STORY OF FARMER JOHN</h1>
+            <img src="Media/Farmer John.png" alt="Farmer John" width="100px">
+            <p>This is farmer john, <br>and he has a silly little sunflower farm out in the middle of nowhere! <br>Can
+                you help him reach sunflower superstardom?</p>
+        </div>
+        <div id="clicker">
+            <h1 id="clickerTitle">CAN YOU GET TO 777 CASH?</h1>
+            <div id="sunflower">
+                <button id="sunflowerButton" onclick="flowerClicked()"><img src="Media\Sunflower glow.png"
+                        alt="Sunflower" draggable="false"><b id="sunflowerCount">SUNFLOWER COUNT: 0</b></button>
+                <b id="sunflowerCash">CASH: 0</b>
+                <p id="autoCount">Auto Clicker Count: 0</p>
+                <p id="conversionRate">Conversion Rate: 5 sunflowers = 1 cash</p>
+            </div>
+            <div id="clickShop">
+                <div class="sellButtons">
+                    <button id="clickSell1" onclick="sellOne()">Sell for [1] cash </button>
+                    <button id="clickSell10" onclick="sellTen()">Sell for [10] cash</button>
+                    <button id="cliclSellAll" onclick="sellAll()">Sell maximum</button>
+                </div>
+            </div>
+            <div id="upgrades">
+                <button id="autoClicker1" onclick="auto1()">Auto Clicker +1<br>[10 cash]</button>
+                <button id="autoClickDouble" onclick="doubleAuto()">Auto Clicker x2<br>[5 auto clickers + 30 cash]</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
